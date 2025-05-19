@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Event Adventure!</h1>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>1. Event Handling</h2>
+            <button id="clickMeButton">Click Me!</button>
+            <div id="hoverArea">Hover Over Me</div>
+            <input type="text" id="keypressInput" placeholder="Type here for keypress">
+            <div id="secretActionArea">Try a Double-Click or Long Press!</div>
+            <p>Event Output: <span id="eventOutput">...</span></p>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>2. Interactive Elements</h2>
+            
+            <div class="interactive-item">
+                <h3>Button Changer</h3>
+                <button id="interactiveButton">I'm Blue!</button>
+            </div>
+
+            <div class="interactive-item">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <button id="prevButton">< Prev</button>
+                    <img src="https://via.placeholder.com/300x200/007bff/ffffff?text=Image+1" alt="Gallery Image" id="galleryImage">
+                    <button id="nextButton">Next ></button>
+                </div>
+            </div>
+
+            <div class="interactive-item">
+                <h3>Tabs</h3>
+                <div class="tabs-container">
+                    <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-button" data-tab="tab2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab3">Tab 3</button>
+                </div>
+                <div id="tab1" class="tab-content active">
+                    <p>Content for Tab 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div id="tab2" class="tab-content">
+                    <p>Content for Tab 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <p>Content for Tab 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>3. Form Validation</h2>
+            <form id="myForm">
+                <div>
+                    <label for="nameInput">Name (Required):</label>
+                    <input type="text" id="nameInput" name="name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div>
+                    <label for="emailInput">Email (Required, Format):</label>
+                    <input type="text" id="emailInput" name="email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div>
+                    <label for="passwordInput">Password (Required, Min 8 Chars):</label>
+                    <input type="password" id="passwordInput" name="password">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                <button type="submit">Submit Form</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Your Name - JS Event Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
